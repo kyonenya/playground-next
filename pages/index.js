@@ -20,6 +20,12 @@ export default function Home() {
           </Link>
         </h2>
 
+        <h2>
+          <Link href="./manuscript">
+            <a>[ manuscript ]</a>
+          </Link>
+        </h2>
+
         <div className="grid">
           <a href="https://nextjs.org/docs" className="card">
             <h3>Documentation &rarr;</h3>
