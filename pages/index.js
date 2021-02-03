@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -13,9 +14,11 @@ export default function Home() {
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
+        <h2>
+          <Link href="./first-post">
+            <a>[ first-post ]</a>
+          </Link>
+        </h2>
 
         <div className="grid">
           <a href="https://nextjs.org/docs" className="card">
