@@ -1,10 +1,18 @@
 import Link from 'next/link';
 import fetch from 'node-fetch';
 
-export default function Entry() {
+export default function Entry({ text }) {
   return (
-    <h1>entry</h1>
+    <h1>{text}</h1>
   );
+}
+
+export function getStaticProps() {
+  return {
+    props: {
+      text: '本文',
+    }
+  }
 }
 
 export function getStaticPaths() {
