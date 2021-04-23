@@ -32,6 +32,12 @@ export default function Home() {
           </Link>
         </h2>
 
+        <h2>
+          <Link href="./entries/2">
+            <a>[ entries/2 ]</a>
+          </Link>
+        </h2>
+
         <div className="grid">
           <a href="https://nextjs.org/docs" className="card">
             <h3>Documentation &rarr;</h3>
