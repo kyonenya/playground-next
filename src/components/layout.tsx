@@ -1,12 +1,15 @@
-import Head from 'next/head'
-import styles from './layout.module.css'
-import utilStyles from '../styles/utils.module.css'
-import Link from 'next/link'
+import Head from "next/head";
+import styles from "./layout.module.css";
+import utilStyles from "../styles/utils.module.css";
+import Link from "next/link";
 
-const name = 'Takashi Kyonenya'
-export const siteTitle = 'placet experiri'
+const name = "Takashi Kyonenya";
+export const siteTitle = "placet experiri";
 
-export default function Layout({ children, home }: {
+export default function Layout({
+  children,
+  home,
+}: {
   children: any;
   home: boolean;
 }) {
@@ -65,5 +68,5 @@ export default function Layout({ children, home }: {
         </div>
       )}
     </div>
-  )
+  );
 }
