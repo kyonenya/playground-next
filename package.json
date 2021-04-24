@@ -4,7 +4,7 @@
   "scripts": {
     "start": "next dev -p 3450",
     "tsc": "tsc -w --noEmit",
-    "fmt": "prettier --write src/**/*",
+    "fmt": "prettier --write src/**/*.ts?",
     "index.js": "node index.js"
   },
   "dependencies": {

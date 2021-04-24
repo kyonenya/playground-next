@@ -1,16 +1,16 @@
-import Link from "next/link";
-import fetch from "node-fetch";
+import Link from 'next/link'
+import fetch from 'node-fetch'
 
 export default function Entry({ text }) {
-  return <h1>{text}</h1>;
+  return <h1>{text}</h1>
 }
 
 export function getStaticProps() {
   return {
     props: {
-      text: "本文",
+      text: '本文',
     },
-  };
+  }
 }
 
 export function getStaticPaths() {
@@ -25,9 +25,9 @@ export function getStaticPaths() {
   //    fallback: false,
   //  };
   return {
-    paths: [{ params: { id: "1" } }, { params: { id: "2" } }],
+    paths: [{ params: { id: '1' } }, { params: { id: '2' } }],
     fallback: false,
-  };
+  }
 }
 
 // 'C2E65E4910424922A29B160BE869B57B'
